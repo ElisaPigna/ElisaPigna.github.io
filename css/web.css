@@ -1,0 +1,117 @@
+html {
+  font-family: 'Cabin', sans-serif;
+  color: RGB(35,35,35) ;
+  font: 16px;
+}
+
+body {
+  margin:20px;
+  background-color: #EBF5FF;
+}
+
+#container{
+  width: 960px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  color: #B22222;
+  font: 108pt;
+}
+
+h2 {
+  font-family: 'Lobster', cursive;
+  color: #B22222;
+  font: 16px;
+}
+
+
+header{
+  text-align:center;
+  width:650px;
+  margin: 0 auto 0 auto;
+  padding: 0.5em;
+
+}
+
+img{
+  border: 2px;
+  border-radius: 50%;
+  border-color: #000000;
+  border-style: solid;
+}
+
+address{
+  text-align:center;
+  font: 0.5px;
+  padding: 1em;
+}
+
+header img{
+  margin-top:50px;
+}
+
+nav ul{
+  list-style-type: none;
+  display: block;
+
+}
+
+nav li{
+  display: inline;
+  position: relative;
+  padding: 50px;
+
+}
+
+nav li:first-child {
+    padding-left: 0px;
+}
+
+nav li:last-child{
+    padding-right: 0px;
+}
+
+nav li a{
+  font-family: 'Lobster', cursive;
+  color: #B22222;
+  font: 16px;
+}
+
+a {
+  color: #000000;
+}
+
+#top-box #jobobjective{
+  float: right;
+  width: 580px;
+  padding: 1em;
+  margin: 1em;
+}
+
+#top-box #education{
+  margin: 1em;
+  width: 380px;
+  clear: left;
+  padding: 1em;
+}
+
+#middle-box #accomplishments{
+  float: right;
+  width: 580px;
+  padding: 1em;
+  margin: 1em;
+}
+
+#middle-box #skills{
+  width: 380px;
+  padding: 1em;
+  margin: 1em;
+  clear: left;
+}
+
+#bottom-box #interests{
+  width: 640px;
+  padding: 1em;
+}
