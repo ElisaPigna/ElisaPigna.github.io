@@ -1,31 +1,40 @@
-html {
-  font-family: 'Cabin', sans-serif;
-  color: RGB(35,35,35) ;
-  font: 16px;
-}
+
+@import url(http://fonts.googleapis.com/css?family=Nunito|Raleway);
+
 
 body {
+  font-family: 'Raleway', sans-serif;
+  color: black;
+  font-size: 16px;
   margin:20px;
-  background-color: #EBF5FF;
+  background-color: white;
 }
 
 #container{
-  width: 960px;
+  width: 725px;
   margin: 0 auto;
 }
 
+#index #container{
+  width:960px;
+}
+
+
+h1, h2, h3, nav {
+  font-family: 'Nunito', sans-serif;
+}
+
 h1 {
-  font-family: 'Lobster', cursive;
-  color: #B22222;
-  font: 108pt;
+  font-size: 32px;
 }
 
 h2 {
-  font-family: 'Lobster', cursive;
-  color: #B22222;
-  font: 16px;
+  font-size: 16px;
 }
 
+h3 {
+  font-size: 12px;
+}
 
 header{
   text-align:center;
@@ -35,16 +44,84 @@ header{
 
 }
 
-img{
+header a,
+nav a,
+a,
+a:visited{
+  text-decoration: none;
+  color: black;
+}
+
+header a:hover,
+nav a:hover,
+a:hover{
+  color: #ccc;
+}
+
+a.active{
+  color: green;
+}
+
+nav ul{
+  list-style-type: none;
+  display: block;
+  padding: 0;
+}
+
+nav li{
+  display: inline-block;
+  padding: 50px;
+
+}
+
+nav li:first-child {
+  padding-left: 0px;
+}
+
+nav li:last-child{
+  padding-right: 0px;
+}
+
+nav li a{
+  color: black;
+  font-size: 16px;
+}
+
+
+#index nav li img{
+  display:inline-block;
   border: 2px;
   border-radius: 50%;
   border-color: #000000;
   border-style: solid;
+  margin: 0 auto;
+  width: 200px;
 }
 
+#index nav li{
+  padding: 0;
+  padding-right: 40px;
+}
+
+#index nav li:last-child {
+  padding-right: 0;
+}
+
+
+img#portrait{
+  border: 2px;
+  border-radius: 50%;
+  border-color: #000000;
+  border-style: solid;
+  margin: 0 auto;
+  display: block;
+  width: 200px;
+}
+
+
 address{
-  text-align:center;
-  font: 0.5px;
+  text-align:left;
+  font-style:normal;
   padding: 1em;
 }
 
@@ -52,66 +129,36 @@ header img{
   margin-top:50px;
 }
 
-nav ul{
-  list-style-type: none;
-  display: block;
-
+p{
+  margin: 0;
 }
 
-nav li{
-  display: inline;
-  position: relative;
-  padding: 50px;
 
+#jobobjective,
+#education{
+  margin-bottom: 16px;
 }
 
-nav li:first-child {
-    padding-left: 0px;
+#grouping-box {
+  position:relative;
+
+}
+#grouping-box h2{
+  margin-top: 0;
 }
 
-nav li:last-child{
-    padding-right: 0px;
+#education,
+#skills{
+  width: 29%;
 }
 
-nav li a{
-  font-family: 'Lobster', cursive;
-  color: #B22222;
-  font: 16px;
+#skills td{
+  font-size: 14px;
 }
 
-a {
-  color: #000000;
-}
-
-#top-box #jobobjective{
-  float: right;
-  width: 580px;
-  padding: 1em;
-  margin: 1em;
-}
-
-#top-box #education{
-  margin: 1em;
-  width: 380px;
-  clear: left;
-  padding: 1em;
-}
-
-#middle-box #accomplishments{
-  float: right;
-  width: 580px;
-  padding: 1em;
-  margin: 1em;
-}
-
-#middle-box #skills{
-  width: 380px;
-  padding: 1em;
-  margin: 1em;
-  clear: left;
-}
-
-#bottom-box #interests{
-  width: 640px;
-  padding: 1em;
+#accomplishments{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 67%;
 }

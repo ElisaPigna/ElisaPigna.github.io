@@ -3,46 +3,32 @@
 <html>
    <head>
       <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>resume</title>
       <link href="css/web.css" media="screen" rel="stylesheet" />
       <link href="css/print.css" media="print" rel="stylesheet" />
-      <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
-      <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+      <link href="css/mobile.css" media="screen" rel="stylesheet" />
   </head>
 
    <body>
-    <div id="container">
+
+     <div id="container">
+
     <header>
-      <img src="img/portrait.jpg" alt="Elisa">
-      <h1>Elisa Francesca Pigna</h1>
+      <a href="index.html"><h1>Elisa Francesca Pigna</h1></a>
     </header>
+
+    <nav>
+      <ul>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="resume.html" class="active">Resume</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
 
     <main>
 
-      <section>
-        <article>
-          <address>
-            <p>
-            1821 West 24th Street<br/>
-            Miami Beach, FL 33140<br/>
-            e.pigna@umiami.edu<br/>
-            (305) 205-2750<br/>
-           </p>
-         </address>
-        </article>
-      </section>
-
-      <nav>
-        <ul>
-          <li><a href="#jobobjective">Job Objective</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#accomplishments">Accomplishments</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#interests">Interests</a></li>
-        </ul>
-      </nav>
-
-    <div id="top-box">
         <section id="jobobjective">
           <h2>Job Objective</h2>
 
@@ -51,6 +37,8 @@
           </article>
         </section>
 
+        <div id="grouping-box">
+
         <section id="education">
           <h2>Education</h2>
 
@@ -58,7 +46,8 @@
               <h3><a href="http://miami.edu"> University of Miami</a></h3>
                 <p>
                 2013-2015 <br/>
-                Advertising Major/Marketing Minor<br/>
+                Advertising Major<br/>
+                Marketing Minor<br/>
                 Coral Gables, FL <br/>
                </p>
             </article>
@@ -72,9 +61,7 @@
                </p>
             </article>
         </section>
-    </div>
 
-    <div id="middle-box">
         <section id="accomplishments">
           <h2>Accomplishments</h2>
 
@@ -141,17 +128,17 @@
           </tr>
 
           <tr>
-            <td>Adobe Photoshop</td>
+            <td>Photoshop</td>
             <td>Proficient</td>
           </tr>
 
           <tr>
-            <td>Adobe InDesign</td>
+            <td>InDesign</td>
             <td>Proficient</td>
           </tr>
 
           <tr>
-            <td>Adobe Illustrator</td>
+            <td>Illustrator</td>
             <td>Novice</td>
           </tr>
 
@@ -169,17 +156,8 @@
       </section>
     </div>
 
-    <div id="bottom-box">
-        <section id="interests">
-          <h2> Interests </h2>
-
-            <article>
-              <p>I am 4th generation Miami Beach, FL resident. I grew up within bicycling distance of South Beach. I have been making paper mache sculptures since I was 9 years old, I have only kept 4. Live music is my passion, I have attended over 300 concerts so far. </p>
-            </article>
-        </section>
-    </div>
-
     </main>
   </div>
+
   </body>
 </html>
