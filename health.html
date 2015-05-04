@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Herbal Health </title>
+    <link href="" media="screen" rel="stylesheet" />
+</head>
+
+
+What Ails You?: <select id="slist1" onchange="SList.getSelect('slist2', this.value);">
+ <option>- - -</option>
+ <option value="head">Head</option>
+ <option value="stomach">Stomach</option>
+ <option value="muscles">Muscles</option>
+ <option value="earnosethroat">Ear, Nose, and Throat</option>
+ <option value="mouth">Mouth</option>
+</select>
+
+<span id="slist2"></span> <div id="scontent"></div>
+
+<script><!--
+var SList = new Object();
+var txtsl2 = 'Select Feeling:';
+
+
+SList.slist2 = {
+ "head": ['migraine', 'tension', 'sinus'],
+ "stomach": ['nausea', 'gas', 'heartburn', 'diarrhea'],
+ "earnosethroat": ['congestion', 'cough', 'sorethroat', 'allergies'],
+ "muscles": ['arthritis', 'cramps'],
+ "mouth": ['toothache', 'drymouth', 'gums', 'badbreath']
+
+};
+
+
+SList.scontent = {
+ "migraine": '<img src=images/migraine.jpg style= "width:500px;height:500px">',
+ "tension": '<img src=images/tension.jpg width="600" height="600">',
+ "sinus": '<img src=images/sinus.jpg width="600" height="600">',
+ "nausea": '<img src=images/nausea.jpg width="600" height="600">',
+ "gas": '<img src=images/gas.jpg width="600" height="600">',
+ "heartburn": '<img src=images/heartburn.jpg width="600" height="600">',
+ "diarrhea": '<img src=images/diarrhea.jpg width="600" height="600">',
+ "congestion": '<img src=images/congestion.jpg width="600" height="600">',
+ "cough": '<img src=images/cough.jpg width="600" height="600">',
+ "sorethroat": '<img src=images/sorethroat.jpg width="600" height="600">',
+ "allergies": '<img src=images/allergies.jpg width="600" height="600">',
+ "cramps": '<img src=images/cramps.jpg width="600" height="600">',
+ "arthritis": '<img src=images/arthritis.jpg width="600" height="600">',
+ "toothache": '<img src=images/toothache.jpg width="600" height="600">',
+ "drymouth": '<img src=images/drymouth.jpg width="600" height="600">',
+ "gums": '<img src=images/gums.jpg width="600" height="600">',
+ "badbreath": '<img src=images/badbreath.jpg width="600" height="600">',
+};
+
+
+SList.getSelect = function(slist, option) {
+  document.getElementById('scontent').innerHTML = '';
+
+  if(SList[slist][option]) {
+    if(slist == 'scontent') document.getElementById('scontent').innerHTML = SList[slist][option];
+    else if(slist == 'slist2') {
+      var addata = '<option>- - -</option>';
+      for(var i=0; i<SList[slist][option].length; i++) {
+        addata += '<option value="'+SList[slist][option][i]+'">'+SList[slist][option][i]+'</option>';
+      }
+
+      document.getElementById('slist2').innerHTML = txtsl2+' <select name="slist2" onchange="SList.getSelect(\'scontent\', this.value);">'+addata+'</select>';
+    }
+  }
+  else if(slist == 'slist2') {
+    document.getElementById('slist2').innerHTML = '';
+  }
+}
+--></script>
+
+</body>
+</html>
